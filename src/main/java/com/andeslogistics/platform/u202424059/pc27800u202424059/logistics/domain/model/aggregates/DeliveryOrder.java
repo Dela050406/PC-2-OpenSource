@@ -47,7 +47,7 @@ public class DeliveryOrder {
     }
 
 
-    public Long getId() {
+    public PackageLoad getId() {
         return id;
     }
 
