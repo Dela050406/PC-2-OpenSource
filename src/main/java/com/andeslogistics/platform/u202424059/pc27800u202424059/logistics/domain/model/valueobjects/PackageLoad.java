@@ -14,4 +14,13 @@ public record PackageLoad(Integer quantity, String unit) {
         }
 
     }
+
+    public PackageLoad increaseBy(Integer additionalQuantity){
+        if (additionalQuantity == null || additionalQuantity <= 0) {
+            throw new IllegalArgumentException("additionalQuantity cannot be null");
+        }
+
+        return new PackageLoad(quantity + additionalQuantity, unit);
+    } 
+
 }
