@@ -21,6 +21,6 @@ public record PackageLoad(Integer quantity, String unit) {
         }
 
         return new PackageLoad(quantity + additionalQuantity, unit);
-    } 
+    }
 
 }
